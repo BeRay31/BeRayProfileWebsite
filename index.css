@@ -1,17 +1,19 @@
 /* pallete
 primary : #FFF1EB
-secondary : #3F89DE
+secondary : #4FD9F2
 font-color : #22262F
 button-color: #12F8F8
 hover-color : #5C74AD 
 font-family: 'Concert One', cursive;
 font-family: 'Londrina Solid', cursive; */
 
+
+/* Setup CSS */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Londrina Solid', cursive;
+  font-family: 'Concert One', cursive
 }
 
 html {
@@ -20,8 +22,9 @@ html {
   color: #22262F;
 }
 
+/* Branding handle css */
 .branding-intro-box {
-  background-color: #3F89DE;
+  background-color: #4FD9F2;
   width: 100vw;
   height: 70vh;
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -43,18 +46,45 @@ html {
   width:40%;
   display: flex;
   flex-direction: column;
-  
 }
+
 .branding-intro-content-text h1 {
   font-size: 2.5rem;
   letter-spacing: 0.2rem;
+  font-family: 'Londrina Solid', cursive
 }
 
-.branding-intro-content-text hr {
-  color: #FFF1EB;
+.branding-intro-content-text h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-family: 'Londrina Solid', cursive
 }
 
 .branding-intro-content-text p {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.about-myself-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.about-myself-box h1 {
+  font-size: 2.75rem;
+  letter-spacing: 0.4rem;
+  font-family: 'Londrina Solid', cursive;
+  text-decoration: underline;
+  margin-bottom: 5rem;
+}
+
+.about-myself-box p {
+  width: 44%;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.25rem;
 }
