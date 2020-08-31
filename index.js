@@ -5,12 +5,14 @@ let hiddenContentShown = false;
 
 const toggleFloatingButton = () => {
   if(hiddenContentShown) {
-    hiddenContent.style.display = 'none';
     floatingButton.classList.remove('floating-contact-button-translate');
+    hiddenContent.classList.remove('show-content');
+    hiddenContent.classList.add('hide-content');
     hiddenContentShown = false;
   } else {
-    hiddenContent.style.display = 'flex';
     floatingButton.classList.add('floating-contact-button-translate');
+    hiddenContent.classList.remove('hide-content');
+    hiddenContent.classList.add('show-content');
     hiddenContentShown = true;
   }
 }

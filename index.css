@@ -103,8 +103,15 @@ html {
   align-items: flex-end;
   gap: 1rem;
   margin-bottom: 1rem;
-  display: none;
-  transition: 1s;
+  transition: .3s;
+}
+
+.hide-content {
+  opacity: 0;
+}
+
+.show-content {
+  opacity: 1;
 }
 
 .button-plus {
